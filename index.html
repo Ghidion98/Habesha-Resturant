@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Eri Foods</title>
+   <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+   <div id="mobMen" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+   </div>
+   <div id="menu">
+      <a href="#about" title="about" onclick="toggleMenu()">About</a>
+      <a href="#gallery" title="gallery" onclick="toggleMenu()">Gallery</a>
+      <a href="#services" title="services" onclick="toggleMenu()">Service</a>
+      <a href="#contact" title="contact" onclick="toggleMenu()">Contact</a>
+   </div>
+   <div id="grid">
+      <header>
+         <div id="logoDiv">
+            <img id="logo" src="assets/images/habe8.png" alt="LOGO">
+         </div>
+         <h1>Habesha Restaurant</h1>
+      </header>
+
+      <!-- About Section -->
+      <div id="about">
+         <div class="about-container">
+            <h3>About Us</h3>
+            <img class="abtimg" src="assets/images/aboImg.png" alt="About Image">
+            <p>
+               Welcome to <strong>Habesha Restaurant</strong>, where tradition meets taste. We are proud to serve authentic Eritrean and Ethiopian dishes made with love and the finest ingredients. Our chefs bring generations of cooking knowledge to every plate, offering flavorful stews, fresh injera, and vibrant vegetarian options.
+            </p>
+            <p>
+               Whether you're craving a spicy zigni, a comforting shiro, or just a warm cup of traditional coffee, our restaurant is the place to be. We’re more than just a dining spot—we’re a cultural experience.
+            </p>
+            <p>
+               Join us for a meal and feel right at home. At Habesha Restaurant, you're not just a guest—you're family.
+            </p>
+         </div>
+      </div>
+
+      <!-- Gallery Section -->
+      <div id="gallery">
+         <h3>Menu</h3>
+         <div class="images">
+            <div class="image-item">
+               <img src="assets/images/habB.png" alt="Coffee">
+               <div class="name"><p>Mix</p><p>$16.99</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/ph3.png" alt="Habe7">
+               <div class="name"><p>Beya</p><p>$26.99</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/poro.png" alt="Shiro">
+               <div class="name"><p>Porridge</p><p>$20</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/ph2.png" alt="Habe6">
+               <div class="name"><p>Qeywet</p><p>$60</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/habe6.png" alt="Habe3">
+               <div class="name"><p>Hmbasha</p><p>$7.99</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/habA.png" alt="Habe1">
+               <div class="name"><p>Zuku</p><p>$34.99</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/habe1.png" alt="Zign">
+               <div class="name"><p>Alcha</p><p>$46.19</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/ph1.png" alt="Full">
+               <div class="name"><p>Derowet</p><p>$39.99</p></div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/ph4.png" alt="Fata">
+               <div class="name"><p>Kittfo</p><p>$35</p></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Services Section -->
+      <div id="services">
+         <h3>Our Services</h3>
+         <p>
+            At Habesha restaurant, we offer a variety of services to make your dining experience as enjoyable as possible. Our friendly staff is always ready to assist you with any 
+            questions or concerns you may have. We also offer catering services for special events, so you can enjoy our delicious dishes at your next party or gathering.
+            We have a special food delivery service for those who prefer to enjoy our food in their own home.
+         </p>
+         <div class="delivery">
+            <div class="delivery-item">
+               <img src="assets/images/deli.png" alt="Delivery Ride">
+               <p>Car Delivery </p>
+            </div>
+            <div class="delivery-item">
+               <img src="assets/images/deliv 1.png" alt="Delivery Bike">
+               <p>Bike Delivery </p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact">
+         <div id="contact-form">
+            <form>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+         
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+         
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" rows="4" required></textarea>
+         
+               <button type="submit">Send Message</button>
+            </form>
+         </div>
+         <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+      
+   <footer>
+      &copy; 2025 Habesha Res.
+   </footer>
+   <script src="scripts/jquery.js"></script>
+   <script src="scripts/app.js"></script>
+</body>
+</html>

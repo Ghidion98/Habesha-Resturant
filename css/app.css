@@ -1,0 +1,344 @@
+/* Reset and base styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+ }
+ 
+ body {
+   background: #fdfdfd;
+   color: #333;
+ }
+ h1 {
+   text-align: center;
+ }
+ 
+ h3 {
+   color: #8B0000;
+   text-align: left;
+   font-size: 1.8em;
+   margin-bottom: 1rem;
+ }
+ 
+ /* Header styles */
+ header {
+   background: #fff;
+   padding: 20px;
+   text-align: center;
+   border-bottom: 2px solid #eee;
+ }
+ #logoDiv {
+   display: flex;
+   justify-content: left;
+   z-index: 3;
+   position: fixed;
+ }
+ #logo {
+   width: 80px;
+   height: 80px;
+   margin-top: -30px;
+   border-radius: 50%;
+ }
+ 
+ /* Mobile Menu Icon */
+ #mobMen {
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   cursor: pointer;
+   z-index: 999;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+ }
+ 
+ .bar {
+   width: 30px;
+   height: 4px;
+   background: #333;
+   border-radius: 2px;
+ }
+ 
+ /* Menu */
+ #menu {
+   position: fixed;
+   top: 0;
+   right: -260px;
+   width: 260px;
+   height: 100%;
+   background-color: #8B0000;
+   padding-top: 60px;
+   transition: right 0.4s ease;
+   z-index: 998;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ #menu a {
+   color: #fff;
+   padding: 20px;
+   text-decoration: none;
+   border-bottom: 1px solid #700000;
+   transition: background 0.3s;
+ }
+ 
+ #menu a:hover {
+   background: #700000;
+ }
+ 
+ /* Grid layout */
+ #grid {
+   padding: 20px;
+ }
+ 
+ .about-container, .recipes-container, .images, .delivery, #contact-container {
+   margin: 2rem 0;
+ }
+ 
+ .about-container img,
+ .recipes-container img,
+ .image-item img,
+ .delivery-item img {
+   width: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+ }
+ 
+ /* Gallery */
+ .images {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* 3 columns */
+   gap: 20px;
+   padding: 20px;
+   justify-items: center;
+ }
+ 
+ .image-item {
+   text-align: center;
+   border: 1px solid #ddd;
+   border-radius: 12px;
+   padding: 10px;
+   background: #fff;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+ }
+ 
+ .image-item:hover {
+   transform: scale(1.05);
+ }
+ 
+ .image-item img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+ }
+ 
+ .name {
+   margin-top: 10px;
+   font-weight: bold;
+   font-size: 1.1em;
+   color: #333;
+ }
+ 
+ /* Services */
+ .delivery {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+ }
+ 
+ .delivery-item {
+   text-align: center;
+ }
+ 
+ /* Contact */
+ #contact{
+   display: flex;
+   justify-content: space-between;
+   gap: 40px;
+   padding: 40px;
+   max-width: 1200px;
+   margin: 0 auto;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   margin-top: 40px;
+}
+
+/* Contact form styling */
+#contact-form {
+   flex: 1;
+   max-width: 48%; /* Keep form and map from being too wide */
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+label {
+   font-size: 1rem;
+   font-weight: bold;
+   color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+   padding: 12px;
+   font-size: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   width: 100%;
+   box-sizing: border-box;
+   background-color: #f9f9f9;
+   transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+   border-color: #5c6bc0;
+   outline: none;
+}
+
+textarea {
+   resize: vertical;
+   min-height: 150px;
+}
+
+button {
+   padding: 12px 20px;
+   background-color: #5c6bc0;
+   color: #fff;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 1.1rem;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #3f4b8f;
+}
+
+/* Map styling */
+#map {
+   flex: 1;
+   max-width: 48%; /* Keep form and map from being too wide */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+   width: 100%;
+   height: 100%;
+   border: none;
+}
+
+
+ /* Footer */
+ footer {
+   text-align: center;
+   padding: 20px;
+   background: #8B0000;
+   color: #fff;
+   margin-top: 2rem;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   body {
+       font-size: 14px;
+   }
+   .bar {
+      background: #f00;
+      margin: 5px 0;
+   }
+
+   /* Make menu items stack vertically */
+   #menu {
+       flex-direction: column;
+       align-items: center;
+       background-color: #333;
+   }
+
+   #menu a {
+       padding: 15px;
+       font-size: 18px;
+   }
+
+   /* Adjust the header */
+   header h1 {
+       font-size: 24px;
+   }
+
+   /* Show the mobile menu icon */
+   #mobMen {
+       display: block;
+   }
+
+   /* Hide the grid and adjust layout for mobile */
+   #grid {
+       display: flex;
+       flex-direction: column;
+   }
+
+   #about, #gallery, #services, #contact {
+       margin-top: 10px;
+   }
+
+   /* Contact and map side by side for mobile */
+   #contact-container {
+       display: block;
+   }
+
+   #contact-form, #map {
+       width: 100%;
+       margin-bottom: 20px;
+   }
+
+   #map iframe {
+       width: 100%;
+       height: 300px;
+   }
+}
+
+/* Styles for when mobile menu is active */
+#menu.active {
+   display: block;
+}
+
+#menu a {
+   text-align: center;
+}
+
+/* Styling for images and menu items in smaller screens */
+.images {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+}
+
+.image-item {
+   text-align: center;
+   background-color: #fff;
+   padding: 10px;
+}
+
+.image-item img {
+   width: 100%;
+   height: auto;
+}
+
+.name p {
+   font-size: 14px;
+}
