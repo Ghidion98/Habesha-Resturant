@@ -164,11 +164,12 @@
 }
 
 h6 {
+  font-size: 1.5em;
   text-align: center;
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 20px;
+  color: #8B0000;
+  margin-bottom: 1rem;
 }
+
 
 form {
   display: flex;
@@ -215,7 +216,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #085db8;
 }
 
 button[type="submit"]:focus {
@@ -223,9 +224,9 @@ button[type="submit"]:focus {
 }
 #message {
   display: none;
-  color: green;
+  color: rgb(19, 207, 19);
   text-align: center;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
  
  /* Contact */
