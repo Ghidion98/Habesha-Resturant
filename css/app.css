@@ -153,6 +153,77 @@
  .delivery-item {
    text-align: center;
  }
+
+ .reservation {
+  background-color: #fff;
+  width: 100%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+}
+#message {
+  display: none;
+  color: green;
+  text-align: center;
+  margin-top: 15px;
+}
  
  /* Contact */
  #contact{
@@ -184,6 +255,9 @@ label {
    font-size: 1rem;
    font-weight: bold;
    color: #444;
+}
+label, h2 {
+  color: #333;
 }
 
 input[type="text"],
@@ -323,6 +397,29 @@ iframe {
    text-align: center;
 }
 
+.reservation {
+  margin: 20px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+label, h2 {
+  color: #333;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  font-size: 14px;
+}
 /* Styling for images and menu items in smaller screens */
 .images {
    display: grid;
